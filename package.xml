@@ -38,8 +38,12 @@ First release
     ]]></notes>
     <filelist>
       <dir name="/" baseinstalldir="Event">
-        <file role="php" name="Dispatcher.php"/>
-        <file role="php" name="Notification.php"/>
+        <file role="php" name="Dispatcher.php">
+          <replace from="@package_version@" to="version" type="package-info" />
+        </file>
+        <file role="php" name="Notification.php">
+          <replace from="@package_version@" to="version" type="package-info" />
+        </file>
         <dir name="tests">
           <file role="test" name="Console_TestListener.php"/>
           <file role="test" name="Dispatcher_testcase.php"/>
