@@ -13,7 +13,7 @@ an object posts an appropriate notification to the Event_Dispatcher.
 The Event_Dispatcher dispatches a message to each registered 
 observer, passing the notification as the sole argument.
   </description>
-  <license>PHP License</license>
+  <license>BSD License</license>
   <maintainers>
     <maintainer>
       <user>mansion</user>
@@ -31,7 +31,7 @@ observer, passing the notification as the sole argument.
   <release>
     <version>0.9.1</version>
     <date>2005-02-05</date>
-    <license>PHP License</license>
+    <license>BSD License</license>
     <state>beta</state>
     <notes><![CDATA[
 First release
