@@ -180,8 +180,8 @@ class Event_Dispatcher
      * posted notifications. Same goes for the class name.
      *
      * @access  public
-     * @param   string      Expected notification name, serves as a filter
      * @param   mixed       A PHP callback
+     * @param   string      Expected notification name, serves as a filter
      * @param   string      Expected contained object class, serves as a filter
      * @return void
      */
