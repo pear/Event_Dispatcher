@@ -54,12 +54,14 @@ define('EVENT_NOTIFICATION_STATE_CANCELLED', 1);
  * a notification name used to identify the notification and some user
  * information which can be anything you need.
  * 
- * @author    Bertrand Mansion <bmansion@mamasam.com>
- * @author    Stephan Schmidt <schst@php.net>
- * @copyright 2005
- * @license   http://www.opensource.org/licenses/bsd-license.php BSD License
- * @version   @VER@
- * @package   Event_Dispatcher
+ * @category   Event
+ * @package    Event_Dispatcher
+ * @author     Bertrand Mansion <bmansion@mamasam.com>
+ * @author     Stephan Schmidt <schst@php.net>
+ * @copyright  1997-2005 The PHP Group
+ * @license    http://www.opensource.org/licenses/bsd-license.php BSD License
+ * @version    Release: @package_version@
+ * @link       http://pear.php.net/package/Event_Dispatcher
  */
 class Event_Notification
 {
@@ -107,7 +109,8 @@ class Event_Notification
      * Constructor
      *
      * @access  public
-     * @param   object      The object of interest for the notification, usually is the posting object
+     * @param   object      The object of interest for the notification,
+     *                      usually is the posting object
      * @param   string      Notification name
      * @param   array       Free information array
      */

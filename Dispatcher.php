@@ -38,11 +38,12 @@
 require_once 'Event/Notification.php';
 
 /**
- * 'static property' for Notification object
+ * Pseudo 'static property' for Notification object
+ * @global array $GLOBALS["_Event_Dispatcher"]
  */
 $GLOBALS['_Event_Dispatcher'] = array(
-                                        'NotificationClass' => 'Event_Notification'
-                                    );
+                                  'NotificationClass' => 'Event_Notification'
+                                     );
 
 /**
  * Registers a global observer
@@ -67,12 +68,14 @@ define('EVENT_DISPATCHER_GLOBAL', '');
  * and Observer patterns. The idea behind Event_Dispatcher is borrowed from 
  * {@link http://developer.apple.com/documentation/Cocoa/Conceptual/Notifications/index.html Apple's Cocoa framework}.
  *
- * @author    Bertrand Mansion <bmansion@mamasam.com>
- * @author    Stephan Schmidt <schst@php.net>
- * @copyright 2005
- * @license   http://www.opensource.org/licenses/bsd-license.php BSD License
- * @version   @VER@
- * @package   Event_Dispatcher
+ * @category   Event
+ * @package    Event_Dispatcher
+ * @author     Bertrand Mansion <bmansion@mamasam.com>
+ * @author     Stephan Schmidt <schst@php.net>
+ * @copyright  1997-2005 The PHP Group
+ * @license    http://www.opensource.org/licenses/bsd-license.php BSD License
+ * @version    Release: @package_version@
+ * @link       http://pear.php.net/package/Event_Dispatcher
  */
 class Event_Dispatcher
 {
@@ -272,7 +275,8 @@ class Event_Dispatcher
                 if ($notification->isNotificationCancelled()) {
                     return $notification;
                 }
-                if (empty($rObserver['class']) || strcasecmp($rObserver['class'], $objClass) == 0) {
+                if (empty($rObserver['class']) ||
+                	strcasecmp($rObserver['class'], $objClass) == 0) {
                     call_user_func_array($rObserver['callback'], array(&$notification));
                     $notification->increaseNotificationCount();
                 }
@@ -286,7 +290,8 @@ class Event_Dispatcher
                 if ($notification->isNotificationCancelled()) {
                     return $notification;
                 }
-                if (empty($rObserver['class']) || strcasecmp($rObserver['class'], $objClass) == 0) {
+                if (empty($rObserver['class']) || 
+                	strcasecmp($rObserver['class'], $objClass) == 0) {
                     call_user_func_array($rObserver['callback'], array(&$notification));
                     $notification->increaseNotificationCount();
                 }
