@@ -3,6 +3,9 @@
  * Unit tests for Event_Dispatcher class
  * 
  * $Id$
+ *
+ * @package    Event_Dispatcher
+ * @subpackage Tests
  */
 
 require_once 'System.php';

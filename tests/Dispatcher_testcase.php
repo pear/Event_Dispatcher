@@ -5,7 +5,9 @@
 /**
  * Unit tests for Event_Dispatcher package.
  *
- * @author Bertrand Mansion <bmansion@mamasam.com>
+ * @author     Bertrand Mansion <bmansion@mamasam.com>
+ * @package    Event_Dispatcher
+ * @subpackage Tests
  */
 
 class Notified

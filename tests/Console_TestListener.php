@@ -1,4 +1,10 @@
 <?php
+/**
+ * Testlistener for PHPUnit Testcase
+ *
+ * @package    Event_Dispatcher
+ * @subpackage Tests
+ */
 class Console_TestListener extends PHPUnit_TestListener {
     function addError(&$test, &$t) {
         $this->_errors += 1;

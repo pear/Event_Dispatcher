@@ -2,6 +2,9 @@
 /**
  * example that shows how to change the class used for notifications
  *
+ * You may change the notification class per dispatcher or globally for all
+ * newly created dispatchers.
+ *
  * @package    Event_Dispatcher
  * @subpackage Examples
  * @author     Stephan Schmidt <schst@php.net>
@@ -14,6 +17,10 @@ require_once 'Event/Dispatcher.php';
 
 /**
  * example sender
+ *
+ * @package    Event_Dispatcher
+ * @subpackage Examples
+ * @author     Stephan Schmidt <schst@php.net>
  */
 class sender
 {
@@ -37,6 +44,13 @@ function receiver(&$notification)
     echo '<br />';    
 }
 
+/**
+ * custom notification class
+ *
+ * @package    Event_Dispatcher
+ * @subpackage Examples
+ * @author     Stephan Schmidt <schst@php.net>
+ */
 class MyNotification extends Event_Notification 
 {
 }
