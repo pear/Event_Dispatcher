@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0">
+  <name>Event_Dispatcher</name>
+  <summary>Dispatch notifications using PHP callbacks</summary>
+  <description>
+The Event_Dispatcher acts as a notification dispatch table.
+It is used to notify other objects of interesting things. This 
+information is encapsulated in Event_Notification objects. Client 
+objects register themselves with the Event_Dispatcher as observers of
+specific notifications posted by other objects. When an event occurs, 
+an object posts an appropriate notification to the Event_Dispatcher.
+The Event_Dispatcher dispatches a message to each registered observer, 
+passing the notification as the sole argument.
+  </description>
+  <license>PHP License</license>
+  <maintainers>
+    <maintainer>
+      <user>mansion</user>
+      <role>lead</role>
+      <name>Bertrand Mansion</name>
+      <email>bmansion@mamasam.com</email>
+    </maintainer>
+    <maintainer>
+      <user>schst</user>
+      <role>developer</role>
+      <name>Stephan Schmidt</name>
+      <email>schst@php.net</email>
+    </maintainer>
+  </maintainers>
+  <release>
+    <version>0.9.1</version>
+    <date>2005-02-05</date>
+    <license>PHP License</license>
+    <state>beta</state>
+    <notes><![CDATA[
+First release
+    ]]></notes>
+    <filelist>
+      <dir name="/" baseinstalldir="Event">
+        <file role="php" name="Dispatcher.php"/>
+        <file role="php" name="Notification.php"/>
+        <dir name="tests">
+          <file role="test" name="Console_TestListener.php"/>
+          <file role="test" name="Dispatcher_testcase.php"/>
+          <file role="test" name="test.php"/>
+        </dir>
+        <dir name="examples">
+          <file role="doc" name="bubbling.php"/>
+          <file role="doc" name="cancel.php"/>
+          <file role="doc" name="notification-class.php"/>
+          <file role="doc" name="object.php"/>
+        </dir>
+      </dir>
+    </filelist>
+  </release>
+</package>
