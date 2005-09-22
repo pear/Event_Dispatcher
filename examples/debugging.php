@@ -10,7 +10,7 @@
 /**
  * load Event_Dispatcher package
  */
-require_once '../Dispatcher.php';
+require_once 'Event/Dispatcher.php';
 
 /**
  * example observers
