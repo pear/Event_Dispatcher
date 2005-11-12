@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0">
+<package xmlns="http://pear.php.net/dtd/package-1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pear.php.net/dtd/package-1.0 http://pear.php.net/dtd/package-1.0.xsd"
+         version="1.0">
   <name>Event_Dispatcher</name>
   <summary>Dispatch notifications using PHP callbacks</summary>
   <description>
@@ -29,12 +31,16 @@ observer, passing the notification as the sole argument.
     </maintainer>
   </maintainers>
   <release>
-    <version>0.9.1</version>
-    <date>2005-02-05</date>
+    <version>1.0.0</version>
+    <date>2005-11-12</date>
     <license>BSD License</license>
-    <state>beta</state>
+    <state>stable</state>
     <notes><![CDATA[
-First release
+First stable release.
+
+* Request #4927, two new introspection methods added:
+- observerRegistered()
+- getObservers()
     ]]></notes>
     <filelist>
       <dir name="/" baseinstalldir="Event">
@@ -52,10 +58,22 @@ First release
         <dir name="examples">
           <file role="doc" name="bubbling.php"/>
           <file role="doc" name="cancel.php"/>
+          <file role="doc" name="debugging.php"/>
           <file role="doc" name="notification-class.php"/>
           <file role="doc" name="object.php"/>
         </dir>
       </dir>
     </filelist>
   </release>
+  <changelog>
+  <release>
+    <version>0.9.1</version>
+    <date>2005-02-05</date>
+    <license>BSD License</license>
+    <state>beta</state>
+    <notes><![CDATA[
+First release
+    ]]></notes>
+  </release>
+  </changelog>
 </package>
