@@ -9,6 +9,8 @@
  * @package    Event_Dispatcher
  * @subpackage Tests
  */
+require_once 'PHPUnit/Framework/TestCase.php';
+require_once 'Event/Dispatcher.php';
 
 class Notified
 {
@@ -55,13 +57,8 @@ function notified(&$notif)
     $obj->id = $notif->getNotificationName().':'.implode(':', $notif->getNotificationInfo());
 }
 
-class Dispatcher_testCase extends PHPUnit_TestCase
+class DispatcherTest extends PHPUnit_Framework_TestCase
 {
-
-    function Dispatcher_testCase($name)
-    {
-        $this->PHPUnit_TestCase($name);
-    }
 
     // Get the default dispatch center
     function test1()
