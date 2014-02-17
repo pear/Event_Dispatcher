@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "Event_Dispatcher": "./"
+            "Event": "./"
         }
     },
     "description": "More info available on: http://pear.php.net/package/Event_Dispatcher",
