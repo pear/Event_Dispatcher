@@ -1,0 +1,36 @@
+{
+    "authors": [
+        {
+            "email": "bmansion@mamasam.com",
+            "name": "Bertrand Mansion",
+            "role": "Lead"
+        },
+        {
+            "email": "schst@php.net",
+            "name": "Stephan Schmidt",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Event_Dispatcher": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/Event_Dispatcher",
+    "include-path": [
+        "./"
+    ],
+    "license": "BSD License",
+    "name": "pear/event_dispatcher",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Event_Dispatcher",
+        "source": "https://github.com/pear/Event_Dispatcher"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
